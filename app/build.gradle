@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace 'com.howlab.mvvmhowlstagram'
-    compileSdk 33
+    compileSdk "Baklava"
 
     defaultConfig {
         applicationId "com.howlab.mvvmhowlstagram"
-        minSdk 24
-        targetSdk 33
+        minSdk "Baklava"
+        targetSdk "Baklava"
         versionCode 1
         versionName "1.0"
 
@@ -38,10 +38,9 @@ android {
 
 dependencies {
 
-    implementation platform('com.google.firebase:firebase-bom:31.2.0')
-    implementation 'com.google.firebase:firebase-auth-ktx'
-    implementation 'com.google.firebase:firebase-firestore-ktx'
-    implementation 'com.google.firebase:firebase-storage-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx:31.2.0'
+    implementation 'com.google.firebase:firebase-firestore-ktx:31.2.0'
+    implementation 'com.google.firebase:firebase-storage-ktx:31.2.0'
 
     implementation 'com.google.android.gms:play-services-auth:20.4.1'
     implementation 'com.facebook.android:facebook-android-sdk:12.3.0'
